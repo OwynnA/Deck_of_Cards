@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b9ca5e1ee4674444a71d55d8524752e, type: 3}
+  m_Name: QueenofDiamonds
+  m_EditorClassIdentifier: 
+  name: QD
+  number: Q
+  suite: diamond
+  newMaterial: {fileID: 2100000, guid: 66e6067247ccf4989a860abe1ff08916, type: 2}
