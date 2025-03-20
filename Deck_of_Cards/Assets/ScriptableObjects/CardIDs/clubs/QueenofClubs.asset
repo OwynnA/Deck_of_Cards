@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: QueenofClubs
   m_EditorClassIdentifier: 
   name: QC
-  number: Q
   suite: club
+  number: 12
   newMaterial: {fileID: 2100000, guid: 835c60240d91a4749a906b21e27fa5c6, type: 2}
+  card: {fileID: 1628375908333656614, guid: 1a4cf8fc31de54c09926d147f2b41925, type: 3}

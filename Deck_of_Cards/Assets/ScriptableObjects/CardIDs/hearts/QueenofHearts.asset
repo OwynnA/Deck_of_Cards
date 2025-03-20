@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: QueenofHearts
   m_EditorClassIdentifier: 
   name: QH
-  number: Q
   suite: heart
+  number: 12
   newMaterial: {fileID: 2100000, guid: 6c6300866b3344e5d9e4cddcac663048, type: 2}
+  card: {fileID: 2915897113441596375, guid: d7be776e2644a4595b122ee2ed96a8a0, type: 3}

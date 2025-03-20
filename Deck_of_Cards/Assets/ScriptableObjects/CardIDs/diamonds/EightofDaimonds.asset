@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EightofDaimonds
   m_EditorClassIdentifier: 
   name: 8D
-  number: 8
   suite: diamond
+  number: 8
   newMaterial: {fileID: 2100000, guid: 866340d0fd61a45958dbba78598c2be0, type: 2}
+  card: {fileID: 6062835577562364940, guid: fec53cd7eeb1445868b4a52cef845cdb, type: 3}

@@ -5,7 +5,9 @@ using UnityEngine;
 [CreateAssetMenu]
 public class CardID : ID
 {
-    public string name, number, suite;
+    public string cardName, suite;
+    public int number;
     public Material newMaterial;
-    
+    public GameObject card;
+
 }

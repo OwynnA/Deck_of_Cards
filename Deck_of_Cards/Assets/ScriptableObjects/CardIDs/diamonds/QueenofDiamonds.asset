@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: QueenofDiamonds
   m_EditorClassIdentifier: 
   name: QD
-  number: Q
   suite: diamond
+  number: 12
   newMaterial: {fileID: 2100000, guid: 66e6067247ccf4989a860abe1ff08916, type: 2}
+  card: {fileID: 8632992914881222270, guid: 091367c3fc8db4fb689e0bacf0e5f36f, type: 3}

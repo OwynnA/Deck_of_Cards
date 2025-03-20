@@ -15,7 +15,7 @@ public class PlayerSpawning : NetworkBehaviour
         NetworkManager.Singleton.OnClientDisconnectCallback += OnPlayerDisconnected;
     }
 
-    private void OnDestroy()
+    private void WhenDestroyed()
     {
         NetworkManager.Singleton.OnClientConnectedCallback -= OnPlayerConnected;
         NetworkManager.Singleton.OnClientDisconnectCallback -= OnPlayerDisconnected;
@@ -28,7 +28,6 @@ public class PlayerSpawning : NetworkBehaviour
         if (!connectedPlayers.Contains(clientId))
         {
             connectedPlayers.Add(clientId);
-            Debug.Log($"Player {clientId} registered. Waiting for full spawn...");
 
             // Start coroutine to delay position updates until player is fully registered
             StartCoroutine(WaitForPlayerToSpawn(clientId));
@@ -40,7 +39,6 @@ public class PlayerSpawning : NetworkBehaviour
         if (!IsServer) return;
 
         connectedPlayers.Remove(clientId);
-        Debug.Log($"Player {clientId} unregistered. Updating positions...");
         UpdatePlayerPositions();
     }
 
@@ -63,7 +61,6 @@ public class PlayerSpawning : NetworkBehaviour
         {
             if (NetworkManager.Singleton.ConnectedClients.TryGetValue(clientId, out var networkClient) && networkClient.PlayerObject != null)
             {
-                Debug.Log($"Player {clientId} fully registered. Updating positions.");
                 UpdatePlayerPositions();
                 yield break;
             }
@@ -78,13 +75,11 @@ public class PlayerSpawning : NetworkBehaviour
     private void UpdatePlayerPositions()
     {
         int playerCount = connectedPlayers.Count;
-        Debug.Log($"Adjusting positions for {playerCount} players."); 
 
         for (int i = 0; i < playerCount; i++)
         {
             float angle = (360f / playerCount) * i; 
             Vector3 spawnPos = tableCenter.position + new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), 0, Mathf.Sin(angle * Mathf.Deg2Rad)) * radius;
-
             if (NetworkManager.Singleton.ConnectedClients.TryGetValue(connectedPlayers[i], out var networkClient))
             {
                 var player = networkClient.PlayerObject;
@@ -93,8 +88,6 @@ public class PlayerSpawning : NetworkBehaviour
                     Debug.LogError($"[ERROR] PlayerObject is null for client {connectedPlayers[i]}!");
                     continue;
                 }
-
-                Debug.Log($"Moving player {connectedPlayers[i]} to {spawnPos}");
                 SetPlayerPositionClientRpc(spawnPos, tableCenter.position, connectedPlayers[i]);
             }
             else
@@ -112,8 +105,11 @@ public class PlayerSpawning : NetworkBehaviour
             var player = networkClient.PlayerObject;
             if (player != null)
             {
+
                 player.transform.position = position;
                 player.transform.LookAt(lookAtPos);
+                position.y = 1500f;
+                player.transform.position = position;
             }
             else
             {

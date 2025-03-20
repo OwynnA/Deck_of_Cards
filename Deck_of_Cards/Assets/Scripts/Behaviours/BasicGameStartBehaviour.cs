@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
 using System.Linq;
-
+using Unity.Collections; // Required for FixedString
 
 public class BasicGameStartBehaviour : NetworkBehaviour
 {
@@ -15,10 +15,13 @@ public class BasicGameStartBehaviour : NetworkBehaviour
         NetworkManager.Singleton.OnClientDisconnectCallback += OnPlayerDisconnected;
     }
 
-    private void OnDestroy()
+    private void WhenDestroyed()
     {
-        NetworkManager.Singleton.OnClientConnectedCallback -= OnPlayerConnected;
-        NetworkManager.Singleton.OnClientDisconnectCallback -= OnPlayerDisconnected;
+        if (NetworkManager.Singleton != null)
+        {
+            NetworkManager.Singleton.OnClientConnectedCallback -= OnPlayerConnected;
+            NetworkManager.Singleton.OnClientDisconnectCallback -= OnPlayerDisconnected;
+        }
     }
 
     private void OnPlayerConnected(ulong clientId)
@@ -37,52 +40,86 @@ public class BasicGameStartBehaviour : NetworkBehaviour
     }
 
     [ServerRpc(RequireOwnership = false)]
-    public void DealAllServerRpc(DeckContainer deck)
+    public void DealAllServerRpc()
     {
         if (!IsServer) return; // Only the host can deal
 
+        if (connectedPlayers.Count == 0)
+        {
+            Debug.LogError("No players connected. Cannot deal cards.");
+            return;
+        }
+
+        // Shuffle the deck
         for (int i = 0; i < deck.deck.Count; i++)
         {
-            CardID temp = deck.deck[i];
             int r = Random.Range(i, deck.deck.Count);
-            deck.deck[i] = deck.deck[r];
-            deck.deck[r] = temp;
+            (deck.deck[i], deck.deck[r]) = (deck.deck[r], deck.deck[i]);
         }
 
-        GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
-        int playerCount = playerObjects.Length;
+        int numPlayers = connectedPlayers.Count;
+        int cardsPerPlayer = deck.deck.Count / numPlayers;
+        List<List<CardID>> hands = new List<List<CardID>>(new List<CardID>[numPlayers]);
 
-        if (playerCount == 0 || deck.deck.Count == 0) return;
-
-        List<List<CardID>> hands = new List<List<CardID>>();
-        for (int i = 0; i < playerCount; i++)
+        for (int i = 0; i < numPlayers; i++)
         {
-            hands.Add(new List<CardID>());
+            hands[i] = new List<CardID>();
         }
 
         for (int i = 0; i < deck.deck.Count; i++)
         {
-            int playerIndex = i % playerCount;
+            int playerIndex = i % numPlayers; 
             hands[playerIndex].Add(deck.deck[i]);
         }
 
-        for (int i = 0; i < playerObjects.Length; i++)
-    {
-        ulong clientId = playerObjects[i].GetComponent<NetworkObject>().OwnerClientId;
-        CardHandData cardHandData = new CardHandData
+        int playerIdx = 0;
+        foreach (ulong clientId in connectedPlayers)
         {
-            CardNames = hands[i].Select(card => card.name).ToList() // Use ToList() instead of ToArray()
-        };
-        SendHandToClientRpc(cardHandData, clientId);
-    }
+            CardDetectionBehaviour playerHand = NetworkManager.Singleton.ConnectedClients[clientId].PlayerObject.GetComponentInChildren<CardDetectionBehaviour>();
+
+            if (playerHand != null)
+            {
+                Transform playerTransform = playerHand.transform; // Get the player’s transform
+				Camera playerCameraRot = playerHand.transform.parent.GetComponentInChildren<Camera>();
+				Transform camRot = playerCameraRot.transform;
+                Vector3 spawnPosition = playerTransform.position;
+				
+                Quaternion spawnRotation = camRot.rotation * Quaternion.Euler(0, 90, 90); 
+
+                foreach (CardID card in hands[playerIdx])
+{
+    GameObject newCard = Instantiate(card.card, spawnPosition, spawnRotation);
+    
+    NetworkObject netObj = newCard.GetComponent<NetworkObject>();
+    if (netObj != null)
+    {
+        netObj.SpawnWithOwnership(clientId); 
     }
 
-    [ClientRpc]
-    private void SendHandToClientRpc(CardHandData cardHandData, ulong clientId)
+    Camera playerCamera = playerHand.transform.parent.GetComponentInChildren<Camera>();
+    if (playerCamera != null)
     {
-        if (NetworkManager.Singleton.LocalClientId == clientId)
+        CardPlayBehavior cardPlayBehavior = newCard.GetComponent<CardPlayBehavior>();
+        if (cardPlayBehavior != null)
         {
-            PlayerHand.Instance.ReceiveHand(cardHandData.CardNames.ToArray());
+            cardPlayBehavior.cam = playerCamera;
+        }
+    }
+    else
+    {
+        Debug.LogWarning($"No camera found for player {clientId}");
+    }
+    
+    // **Change: No more stacking upwards!**
+}
+
+
+                playerIdx++;
+            }
+            else
+            {
+                Debug.LogError($"PlayerHand not found for client {clientId}");
+            }
         }
     }
 }

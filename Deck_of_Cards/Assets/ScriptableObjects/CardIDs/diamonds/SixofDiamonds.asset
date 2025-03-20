@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SixofDiamonds
   m_EditorClassIdentifier: 
   name: 6D
-  number: 6
   suite: diamond
+  number: 6
   newMaterial: {fileID: 2100000, guid: 11f00ee06a767499196586e7203d440e, type: 2}
+  card: {fileID: 2089055997002824679, guid: ec081d26745c843bb9565cabaa96b910, type: 3}

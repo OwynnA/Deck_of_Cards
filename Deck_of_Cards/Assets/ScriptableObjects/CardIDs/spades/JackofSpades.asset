@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: JackofSpades
   m_EditorClassIdentifier: 
   name: JS
-  number: J
   suite: spade
+  number: 11
   newMaterial: {fileID: 2100000, guid: 726477e0f93884d328f2b203d2e3d31d, type: 2}
+  card: {fileID: 7743611303118609085, guid: f1225cd93bd204d6d8547b2b4087adb1, type: 3}

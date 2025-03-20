@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SevenofClubs
   m_EditorClassIdentifier: 
   name: 7C
-  number: 7
   suite: club
+  number: 7
   newMaterial: {fileID: 2100000, guid: 52054c9b706804db49d6611fb03c5d33, type: 2}
+  card: {fileID: 4292827693946922919, guid: d06333170a197402ca3e3e38a2611f69, type: 3}

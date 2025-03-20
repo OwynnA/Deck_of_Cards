@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: FourofSpades
   m_EditorClassIdentifier: 
   name: 4S
-  number: 4
   suite: spade
+  number: 4
   newMaterial: {fileID: 2100000, guid: 4358c11ab0a34443485c6308c6c7cfda, type: 2}
+  card: {fileID: 8615196242366271130, guid: f551c5ded57674cd39243bd19aab6ffa, type: 3}

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SixofHearts
   m_EditorClassIdentifier: 
   name: 6H
-  number: 6
   suite: heart
+  number: 6
   newMaterial: {fileID: 2100000, guid: 5952f2873e4dc4605ab634e848f8a57c, type: 2}
+  card: {fileID: 7943692203147004775, guid: 47c222f3fae5f45a5a5fecf1ebc323b8, type: 3}

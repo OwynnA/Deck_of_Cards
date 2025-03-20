@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: AceofDiamonds
   m_EditorClassIdentifier: 
   name: AD
-  number: A
   suite: diamond
+  number: 14
   newMaterial: {fileID: 2100000, guid: eb4563aa7c74f434dab58b2534e005c7, type: 2}
+  card: {fileID: 5997791417852240227, guid: 2461c18685dc24a198a7150997a6e730, type: 3}

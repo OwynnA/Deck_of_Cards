@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: KingofHearts
   m_EditorClassIdentifier: 
   name: KH
-  number: K
   suite: heart
+  number: 13
   newMaterial: {fileID: 2100000, guid: 22fdfa5a623f845ffabd6283546cf205, type: 2}
+  card: {fileID: 2414111673537499203, guid: 4c90593f0ce524539894bd82b41e9631, type: 3}

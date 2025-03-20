@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: JackofDiamonds
   m_EditorClassIdentifier: 
   name: JD
-  number: J
   suite: diamond
+  number: 11
   newMaterial: {fileID: 2100000, guid: 70ea50fb9584f4d679a9f5b06e0368b1, type: 2}
+  card: {fileID: 9004949013552526837, guid: 6d933a4ffcb2346f6b57718bf399f623, type: 3}

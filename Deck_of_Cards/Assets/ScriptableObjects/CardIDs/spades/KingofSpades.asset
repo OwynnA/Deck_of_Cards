@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: KingofSpades
   m_EditorClassIdentifier: 
   name: KS
-  number: K
   suite: spade
+  number: 13
   newMaterial: {fileID: 2100000, guid: 0aa7255ab632344f981a21a6bd714074, type: 2}
+  card: {fileID: 5627923789362608604, guid: abb529aa059e14edfbeb68ecebe68d12, type: 3}

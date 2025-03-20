@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: FourofHearts
   m_EditorClassIdentifier: 
   name: 4H
-  number: 4
   suite: heart
+  number: 4
   newMaterial: {fileID: 2100000, guid: 8fcfe2dc5a1264eddbb6ee27c216f520, type: 2}
+  card: {fileID: 8526032449731920496, guid: ee63f2e6e95a7444d8448ea4cb6c3206, type: 3}

@@ -15,7 +15,6 @@ public class PlayerSetup : NetworkBehaviour
             if (spawner != null)
             {
                 spawner.RegisterPlayer(OwnerClientId);
-                Debug.Log($"Player {OwnerClientId} registered with spawner.");
             }
             else
             {
@@ -29,7 +28,17 @@ public class PlayerSetup : NetworkBehaviour
         }
         else
         {
-            playerCamera.SetActive(false);
+            Camera cam = playerCamera.GetComponent<Camera>();
+            if (cam != null)
+            {
+                cam.enabled = false; // Disable rendering but keep object active
+            }
+
+            AudioListener listener = playerCamera.GetComponent<AudioListener>();
+            if (listener != null)
+            {
+                listener.enabled = false; // Disable audio for non-owners
+            }
         }
 
         start?.Invoke();

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: FourofClubs
   m_EditorClassIdentifier: 
   name: 4C
-  number: 4
   suite: club
+  number: 4
   newMaterial: {fileID: 2100000, guid: 8208bf85e957b4ebbae926aa33beeea2, type: 2}
+  card: {fileID: 5343398459067819871, guid: 716a07534c78e4129948aebd822f1139, type: 3}

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ThreeofSpades
   m_EditorClassIdentifier: 
   name: 3S
-  number: 3
   suite: spade
+  number: 3
   newMaterial: {fileID: 2100000, guid: 19551976609a749ed9dda9b2c9245cd6, type: 2}
+  card: {fileID: 2622114517173756335, guid: 66d6b50f84de84ba28f2aea34c174f7f, type: 3}

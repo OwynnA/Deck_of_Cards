@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: FiveofDiamond
   m_EditorClassIdentifier: 
   name: 5D
-  number: 5
   suite: diamond
+  number: 5
   newMaterial: {fileID: 2100000, guid: 21234017c35674a3b874541d9f9b2dba, type: 2}
+  card: {fileID: 3304767878326663339, guid: 1d286401246fc4b58a63ac2a84aff709, type: 3}

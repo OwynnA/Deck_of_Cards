@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EightofHearts
   m_EditorClassIdentifier: 
   name: 8H
-  number: 8
   suite: heart
+  number: 8
   newMaterial: {fileID: 2100000, guid: 557a34065c04a4f539b442ec1dd5507f, type: 2}
+  card: {fileID: 6893671944937615255, guid: 2754d59acf9714c5788f82eefe5baa41, type: 3}

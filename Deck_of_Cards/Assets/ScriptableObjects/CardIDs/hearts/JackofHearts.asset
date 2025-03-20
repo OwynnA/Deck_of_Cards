@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: JackofHearts
   m_EditorClassIdentifier: 
   name: JH
-  number: J
   suite: heart
+  number: 11
   newMaterial: {fileID: 2100000, guid: 8b698e9e572df489386fe22a6c86c92f, type: 2}
+  card: {fileID: 4775212029318083941, guid: c53a3040afb27426aa5851e841221da2, type: 3}

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TenofHearts
   m_EditorClassIdentifier: 
   name: 10H
-  number: 10
   suite: heart
+  number: 10
   newMaterial: {fileID: 2100000, guid: 3d9efc1630193473ca44bac7e411cb04, type: 2}
+  card: {fileID: 2927328830018595931, guid: 26ab09ac1bf9b43b5a7e5d9af2b672c6, type: 3}

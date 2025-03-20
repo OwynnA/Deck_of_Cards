@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: QueenofSpades
   m_EditorClassIdentifier: 
   name: QS
-  number: Q
   suite: spade
+  number: 12
   newMaterial: {fileID: 2100000, guid: 878f562d6da614f02b84d2d9cdeae439, type: 2}
+  card: {fileID: 32740921176179466, guid: 0c99fcc9da0df44a8a43a075412be7d5, type: 3}

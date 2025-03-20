@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: KingofDiamonds
   m_EditorClassIdentifier: 
   name: KD
-  number: K
   suite: diamond
+  number: 13
   newMaterial: {fileID: 2100000, guid: e7d8aa515f85f432c8abf7b2427dedeb, type: 2}
+  card: {fileID: 4792568638688705279, guid: 23bd10eab9cb94c16ab9528b27a0eb26, type: 3}

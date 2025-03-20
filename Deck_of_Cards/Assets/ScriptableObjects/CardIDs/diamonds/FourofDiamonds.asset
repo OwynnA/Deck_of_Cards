@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: FourofDiamonds
   m_EditorClassIdentifier: 
   name: 4D
-  number: 4
   suite: diamond
+  number: 4
   newMaterial: {fileID: 2100000, guid: 67ce673b4086241d5b3eac22c247559c, type: 2}
+  card: {fileID: 6308317442186929640, guid: a28ba776100d245acb2fbf1ba8782f4d, type: 3}

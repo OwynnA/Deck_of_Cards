@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ThreeofClubs
   m_EditorClassIdentifier: 
   name: 3C
-  number: 3
   suite: club
+  number: 3
   newMaterial: {fileID: 2100000, guid: 5bc92ff76767649bc8704b83d0c1d5c1, type: 2}
+  card: {fileID: 7069966078708997199, guid: 04e3b71f7832a4c98ac3a04c708e91e9, type: 3}

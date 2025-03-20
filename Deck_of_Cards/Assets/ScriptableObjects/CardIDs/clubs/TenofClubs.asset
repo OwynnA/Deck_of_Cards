@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TenofClubs
   m_EditorClassIdentifier: 
   name: 10C
-  number: 10
   suite: club
+  number: 10
   newMaterial: {fileID: 2100000, guid: 27bd12a94eb9749ec9757307eb15f440, type: 2}
+  card: {fileID: 2885875873502453280, guid: b9df56e7e503c4bb2b9e21f414cd0fe9, type: 3}

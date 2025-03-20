@@ -5,15 +5,17 @@ using UnityEngine;
 public class CardIDBehaviour : IDContainerBehaviour
 {
     public DeckContainer deckObj;
+    public CardID cardIDObj;
     private Renderer rendererObj;
-    // Start is called before the first frame update
     void Awake()
     {
         rendererObj = GetComponent<Renderer>();
-        IDObj = deckObj.currentCard;
     }
 
-    // Update is called once per frame
+    public void UpdateArt()
+    {
+        rendererObj.material = cardIDObj.newMaterial;
+    }
     public void ChangeRendererMaterial()
     {
         rendererObj.material = deckObj.currentCard.newMaterial;

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2044809229720706221
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 817492192306845662, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3890445190
+      objectReference: {fileID: 0}
+    - target: {fileID: 817492192306845662, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 3797241396
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395112183709714806, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.9425225
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395112183709714806, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0015018389
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395112183709714806, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.6548357
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395112183709714806, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395112183709714806, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395112183709714806, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395112183709714806, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395112183709714806, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395112183709714806, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395112183709714806, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490060581855833440, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a556064fe744b40728cd435308409296, type: 2}
+    - target: {fileID: 7843645054647512656, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: m_Name
+      value: Seven_of_Hearts Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8187690692903357322, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: IDObj
+      value: 
+      objectReference: {fileID: 11400000, guid: 9370a02651b0d45daa444daf573bbb59, type: 2}
+    - target: {fileID: 8187690692903357322, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}
+      propertyPath: cardIDObj
+      value: 
+      objectReference: {fileID: 11400000, guid: 9370a02651b0d45daa444daf573bbb59, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}

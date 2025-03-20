@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TenofSpades
   m_EditorClassIdentifier: 
   name: 10S
-  number: 10
   suite: spade
+  number: 10
   newMaterial: {fileID: 2100000, guid: a2abeee50b47341738c513e12ca9d614, type: 2}
+  card: {fileID: 6553568097280902388, guid: d607461b569864eb5bc92d5051473959, type: 3}

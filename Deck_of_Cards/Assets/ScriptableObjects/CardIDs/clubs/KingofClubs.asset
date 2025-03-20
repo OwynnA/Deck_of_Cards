@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: KingofClubs
   m_EditorClassIdentifier: 
   name: KC
-  number: K
   suite: club
+  number: 13
   newMaterial: {fileID: 2100000, guid: 271b8e631b0b84355863e8d6da2065fa, type: 2}
+  card: {fileID: 7843645054647512656, guid: baca230c16c9a4362b9a159df2bd5c3d, type: 3}

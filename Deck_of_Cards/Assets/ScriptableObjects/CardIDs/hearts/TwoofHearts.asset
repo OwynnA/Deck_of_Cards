@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TwoofHearts
   m_EditorClassIdentifier: 
   name: 2H
-  number: 2
   suite: heart
+  number: 2
   newMaterial: {fileID: 2100000, guid: f72582e8e9caf44ba998fb4228ca096b, type: 2}
+  card: {fileID: 8106818419683001531, guid: 3856255c521a8450da6590d507bce69e, type: 3}

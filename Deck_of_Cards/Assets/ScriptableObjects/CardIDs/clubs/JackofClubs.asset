@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: JackofClubs
   m_EditorClassIdentifier: 
   name: JC
-  number: J
   suite: club
+  number: 11
   newMaterial: {fileID: 2100000, guid: 49b59608b247e42eba1a5de042f0328d, type: 2}
+  card: {fileID: 7085871697276904606, guid: 18b9c9c8f5c7a4af8b90c6f3401ad4f5, type: 3}

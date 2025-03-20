@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: NineofSpades
   m_EditorClassIdentifier: 
   name: 9S
-  number: 9
   suite: spade
+  number: 9
   newMaterial: {fileID: 2100000, guid: 97a04007e1a0f432ea05fed9c0ec708f, type: 2}
+  card: {fileID: 8750718860088872670, guid: a3aa446d656114be48122b465e109803, type: 3}

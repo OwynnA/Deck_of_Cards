@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TenofDiamonds
   m_EditorClassIdentifier: 
   name: 10D
-  number: 10
   suite: diamond
+  number: 10
   newMaterial: {fileID: 2100000, guid: b50bd0032cc1449cf82be9685c0d8f15, type: 2}
+  card: {fileID: 4478343345117677525, guid: 152716c0c6fb54af2b6efb458fea6911, type: 3}

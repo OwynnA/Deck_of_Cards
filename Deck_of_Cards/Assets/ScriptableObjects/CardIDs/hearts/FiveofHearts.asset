@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: FiveofHearts
   m_EditorClassIdentifier: 
   name: 5H
-  number: 5
   suite: heart
+  number: 5
   newMaterial: {fileID: 2100000, guid: 5f7090f4e286e455192b41f98b8879c9, type: 2}
+  card: {fileID: 8256093635855033314, guid: 4d9b4f4e085524679b9925a9004739f1, type: 3}

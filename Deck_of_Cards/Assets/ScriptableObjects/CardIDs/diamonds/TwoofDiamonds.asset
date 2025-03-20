@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TwoofDiamonds
   m_EditorClassIdentifier: 
   name: 2D
-  number: 2
   suite: diamond
+  number: 2
   newMaterial: {fileID: 2100000, guid: cdc19d022f5ee4e4b8b280ffa5b7dcd7, type: 2}
+  card: {fileID: 2613889048375304192, guid: 7c671271ffd374bd0990525e31383599, type: 3}

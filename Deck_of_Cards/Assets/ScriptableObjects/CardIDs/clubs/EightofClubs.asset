@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EightofClubs
   m_EditorClassIdentifier: 
   name: 8C
-  number: 8
   suite: club
+  number: 8
   newMaterial: {fileID: 2100000, guid: b39831efda29d403194295a4a969fe8f, type: 2}
+  card: {fileID: 5747223960097434258, guid: 38fece83cbd744963845c936d732cf43, type: 3}

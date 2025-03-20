@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: AceofHearts
   m_EditorClassIdentifier: 
   name: AH
-  number: A
   suite: heart
+  number: 14
   newMaterial: {fileID: 2100000, guid: ca560adc599c341659e74ddb3925d28c, type: 2}
+  card: {fileID: 4727866532140532209, guid: 3c67069f592b04d26b1a76c89572b4f3, type: 3}

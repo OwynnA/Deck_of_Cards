@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SixofClubs
   m_EditorClassIdentifier: 
   name: 6C
-  number: 6
   suite: club
+  number: 6
   newMaterial: {fileID: 2100000, guid: 6cc12694de66f445aa9ef408674608ec, type: 2}
+  card: {fileID: 1751262622712943905, guid: 6583a8dd4e8a34ab9b7d37a70efefe58, type: 3}

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: NineofDiamonds
   m_EditorClassIdentifier: 
   name: 9D
-  number: 9
   suite: diamond
+  number: 9
   newMaterial: {fileID: 2100000, guid: 314f6d46472634cadbd770710d155424, type: 2}
+  card: {fileID: 6945740703035756489, guid: 5fb1f54fc07d34370b80d955e16f639f, type: 3}
